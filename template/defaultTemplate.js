@@ -29,28 +29,27 @@ const defaultTemplate = (username, heading ) => {
                         <td> \
                             <h3 style="color: #333; background-color: #F2F2F2; margin: 0; padding: 12px;">Why I’m Interested in Your Upwork Account</h3> \
                             <p style="font-size: 16px; line-height: 1.5;"> \
-                                &nbsp;&nbsp;Due to the recent permanent blocking of my <b>Upwork account,</b> I am seeking to partner with established developers in the <b>U.S.</b> The <b>Upwork platform</b> is highly competitive, and having a U.S.-based account will allow me to access a wider range of <b>projects</b> and <b>clients,</b> fostering greater <b>trust</b> and <b>communication</b> in my freelance work. \
+                                &nbsp;&nbsp;I am particularly interested in collaborating with a <b>USA developer</b> like yourself because I enjoy working alongside U.S. professionals and find it rewarding to engage with <b>U.S. clients.</b> Due to the recent permanent blocking of my <b>Upwork account,</b> I see this partnership as an opportunity to access the <b>Upwork platform,</b> which is highly competitive. Having a U.S.-based account will help me connect more effectively with a wider range of <b>projects</b> and <b>clients</b> while fostering greater <b>trust</b> and <b>communication</b> in our freelance work. \
                             </p> \
                         </td> \
                     </tr> \
                     <tr> \
                         <td> \
-                            <h3 style="color: #333; background-color: #F2F2F2; margin: 0; padding: 12px;">Advantages of Our Collaboration</h3> \
-                            <ul style="line-height: 1.5; font-size: 16px;"> \
-                                <li><b>Access to the U.S. Market:</b> Partnering with you will enable me to engage with <b>innovative projects</b> and a broader range of <b>clients</b>.</li> \
-                                <li><b>Enhanced Client Trust:</b> Collaborating with a <b>U.S.-based partner</b> fosters greater <b>trust</b> and facilitates effective communication with <b>clients</b>.</li> \
-                                <li><b>Mutual Growth:</b> This partnership offers a unique opportunity for you to expand your <b>project scope</b> without significant <b>risk</b>.</li> \
-                            </ul> \
+                            <h3 style="color: #333; background-color: #F2F2F2; margin: 0; padding: 12px;">Proposal Overview</h3> \
+                            <p style="font-size: 16px; line-height: 1.5;"> \
+                                &nbsp;&nbsp;I am interested in <b>renting</b> your <b>Upwork account,</b> provided you are not currently using it. This arrangement would enable me to leverage your account to tap into the <b>U.S. market</b> effectively. \
+                            </p> \
                         </td> \
                     </tr> \
                     <tr> \
                         <td> \
-                            <h3 style="color: #333; background-color: #F2F2F2; margin: 0; padding: 12px;">Proposed Structure</h3> \
+                            <h3 style="color: #333; background-color: #F2F2F2; margin: 0; padding: 12px;">Income Sharing</h3> \
                             <p style="font-size: 16px; line-height: 1.5;"> \
-                                &nbsp;&nbsp;If you’re not currently using your <b>Upwork</b> account, I propose we utilize it to manage our <b>freelance work</b>. We can establish a transparent <b>revenue-sharing agreement</b> for any <b>income</b> generated from our joint <b>projects</b>. \
+                                &nbsp;&nbsp;I propose that we share the <b>income</b> generated from any projects secured through your Upwork account on a mutually agreed basis. \
                             </p> \
+                            <br> \
                             <p style="font-size: 16px; line-height: 1.5;"> \
-                                I would appreciate the opportunity to discuss this <b>proposal</b> in detail and explore how we can <b>collaborate</b> effectively. For your reference, I have included links to my <b>portfolio</b> and <b>social media profiles</b> below: \
+                                &nbsp;&nbsp;I believe this partnership could enhance our opportunities and foster <b>mutual growth.</b> If you're open to discussing this further, I would appreciate the chance to connect. For your reference, I have included links to my <b>portfolio</b> and <b>social media profiles</b> below: \
                             </p> \
                             <div style="display: flex;"> \
                                 <a href="https://twitter.com/JamesTX0108" style="text-decoration: none; color: #0073e6; padding-right: 20px;">  \
