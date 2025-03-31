@@ -1,49 +1,82 @@
-import nodemailer from "nodemailer";
 import dotenv from "dotenv";
+import { writeFile, utils } from "xlsx";
 import users from "./users.js";
-import defaultTemplate from "./template/defaultTemplate.js";
+import { getEmailSender } from "./core/selection/email.js";
+import { getRandomHeading } from "./core/selection/heading.js";
+import { getRandomTemplate } from "./core/selection/template.js";
+import { sendEmailContent } from "./core/emailDeliver.js";
 
 dotenv.config();
 
-// Create a transporter object using Gmail SMTP
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASSWORD,
-  },
-});
-
 const userList = users;
 
-// Async function to send an email
-const sendEmail = async (userEmail, username) => {
-  const htmlContent = defaultTemplate(username, "Looking for a Long-Term Collaboration");
-  const mailOptions = {
-    from: process.env.EMAIL_USER,
-    to: userEmail,
-    subject: `✩░▒▓▆▅▃▂▁🤝𝐋𝐨𝐨𝐤𝐢𝐧𝐠 𝐟𝐨𝐫 𝐚 𝐋𝐨𝐧𝐠-𝐓𝐞𝐫𝐦 𝐂𝐨𝐥𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐢𝐨𝐧🤝▁▂▃▅▆▓▒░✩`,
-    html: htmlContent,
-  };
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-  try {
-    // Await sending the email
-    const info = await transporter.sendMail(mailOptions);
-    console.log(`✅ Email sent to ${username}:`, info.response);
-  } catch (error) {
-    console.error(`❌ Error sending email to ${username}:`, error.message);
-  }
+// Function to format date and time for the filename
+const formatDateTime = () => {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, "0"); // Months are 0-11
+  const day = String(now.getDate()).padStart(2, "0");
+  const hours = String(now.getHours()).padStart(2, "0");
+  const minutes = String(now.getMinutes()).padStart(2, "0");
+  const seconds = String(now.getSeconds()).padStart(2, "0");
+
+  return `${year}-${month}-${day}_${hours}-${minutes}-${seconds}`;
 };
 
-// Function to send emails to all users
-const sendEmailsToAllUsers = async () => {
-  const emailPromises = userList.map((user) =>
-    sendEmail(user.email, user.name)
-  );
+let prevUserName = "";
+let sender = "";
 
-  // Wait for all emails to be sent
-  await Promise.all(emailPromises);
-  console.log("All emails have been processed.");
+const sendEmailsToAllUsers = async () => {
+  const logs = []; // Array to hold log information
+
+  for (const user of userList) {
+    // Checking username and choose random sender email if username changes
+    if (sender === "" || user?.name !== prevUserName) {
+      sender = getEmailSender();
+      prevUserName = user?.name;
+    }
+
+    // Select random heading and template content
+    const heading = getRandomHeading();
+    const template = getRandomTemplate(user?.name, heading?.heading);
+    const log = await sendEmailContent(
+      sender,
+      user,
+      heading?.subject,
+      template
+    );
+
+    // Add log information to the logs array
+    logs.push({
+      sender: sender?.email,
+      name: user.name,
+      email: user.email,
+      subject: heading.subject,
+      log: log, // You can adjust what log information to store
+    });
+
+    await sleep(1000); // Delay of 1000 milliseconds (1 second) between each email
+  }
+
+  // Convert logs array to worksheet
+  const ws = utils.json_to_sheet(logs);
+
+  // Create a new workbook and append the worksheet
+  const wb = utils.book_new();
+  utils.book_append_sheet(wb, ws, "Email Logs");
+
+  // Generate the filename with current date and time
+  const timestamp = formatDateTime();
+  const filename = `email_logs_${timestamp}.xlsx`;
+
+  // Write to an XLSX file
+  writeFile(wb, filename);
+
+  console.log(
+    `All emails have been processed, and logs have been saved to ${filename}.`
+  );
 };
 
 // Start sending emails
