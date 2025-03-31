@@ -4,30 +4,15 @@ export const getRandomTemplate = (username, heading) => {
       <title>Collaboration Proposal</title> \
     </head> \
     <body> \
-      <table \
-        align="center" \
-        border="0" \
-        cellpadding="0" \
-        cellspacing="0" \
-        style="border: 2px solid #0073e6; border-radius: 10px; padding: 20px" \
-      > \
+      <table align="center" border="0" cellpadding="0" cellspacing="0" style="border: 2px solid #0073e6; border-radius: 10px; padding: 20px;"> \
         <tbody> \
           <tr> \
-            <td \
-              style=" \
-                display: flex; \
-                flex-direction: row; \
-                padding: 20px; \
-                text-align: center; \
-                align-items: center; \
-                gap: 20px; \
-              " \
-            > \
-              <img \
-                src="https://cdn1.iconfinder.com/data/icons/business-and-profession/128/19-512.png" \
-                style="width: 70px; height: 70px" \
-                alt="Collaboration icon" \
-              /> \
+            <td style="display:flex;flex-direction:row;padding:20px;text-align:center;align-items: center;gap: 20px;"> \
+                <img   \
+                src="https://cdn1.iconfinder.com/data/icons/business-and-profession/128/19-512.png"   \
+                style="width: 70px; height: 70px;"   \
+                alt="Coverletter icon"   \
+                >  \
               <h1 style="color: #2c2c2c; margin-left: 20px"> \
                 ${heading} \
               </h1> \
@@ -77,13 +62,25 @@ export const getRandomTemplate = (username, heading) => {
               </p> \
               <div style="display: flex"> \
                 <a href="https://twitter.com/JamesTX0108" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
-                  <img src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-contained-512.png" style="width: 40px; height: 40px" alt="Twitter icon" /> \
+                  <img   \
+                    src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-contained-512.png"   \
+                    style="width: 40px; height: 40px;"   \
+                    alt="X icon"   \
+                    >  \
                 </a> \
                 <a href="https://github.com/montedev0516" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
-                  <img src="https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-1/512/github-square-512.png" style="width: 40px; height: 40px" alt="GitHub icon" /> \
+                  <img   \
+                    src="https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-1/512/github-square-512.png"   \
+                    style="width: 40px; height: 40px;"   \
+                    alt="Github icon"   \
+                  >  \
                 </a> \
                 <a href="https://james-haruki.vercel.app" style="text-decoration: none; color: #0073e6;"> \
-                  <img src="https://cdn2.iconfinder.com/data/icons/banking-finance-glyphs-vol-6/52/person__account__avatar__user__profile__global__portfolio-512.png" style="width: 40px; height: 40px" alt="Portfolio icon" /> \
+                  <img   \
+                      src="https://cdn2.iconfinder.com/data/icons/banking-finance-glyphs-vol-6/52/person__account__avatar__user__profile__global__portfolio-512.png"   \
+                      style="width: 40px; height: 40px;"   \
+                      alt="Protfolio icon"   \
+                  >  \
                 </a> \
               </div> \
             </td> \
@@ -126,11 +123,11 @@ export const getRandomTemplate = (username, heading) => {
               gap: 20px; \
             " \
           > \
-            <img \
-              src="https://cdn1.iconfinder.com/data/icons/business-and-profession/128/19-512.png" \
-              style="width: 70px; height: 70px" \
-              alt="Collaboration icon" \
-            /> \
+            <img   \
+            src="https://cdn1.iconfinder.com/data/icons/business-and-profession/128/19-512.png"   \
+            style="width: 70px; height: 70px;"   \
+            alt="Coverletter icon"   \
+            >  \
             <h1 style="color: #2c2c2c; margin-left: 20px"> \
               ${heading} \
             </h1> \
@@ -179,15 +176,27 @@ export const getRandomTemplate = (username, heading) => {
               If this proposal resonates with you, I would welcome the opportunity to discuss the details further. Below are links to my <b>portfolio</b> and <b>social media profiles</b> for your consideration: \
             </p> \
             <div style="display: flex"> \
-              <a href="https://twitter.com/JamesTX0108" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
-                <img src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-contained-512.png" style="width: 40px; height: 40px" alt="Twitter icon" /> \
-              </a> \
-              <a href="https://github.com/montedev0516" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
-                <img src="https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-1/512/github-square-512.png" style="width: 40px; height: 40px" alt="GitHub icon" /> \
-              </a> \
-              <a href="https://james-haruki.vercel.app" style="text-decoration: none; color: #0073e6;"> \
-                <img src="https://cdn2.iconfinder.com/data/icons/banking-finance-glyphs-vol-6/52/person__account__avatar__user__profile__global__portfolio-512.png" style="width: 40px; height: 40px" alt="Portfolio icon" /> \
-              </a> \
+                <a href="https://twitter.com/JamesTX0108" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
+                  <img   \
+                    src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-contained-512.png"   \
+                    style="width: 40px; height: 40px;"   \
+                    alt="X icon"   \
+                    >  \
+                </a> \
+                <a href="https://github.com/montedev0516" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
+                  <img   \
+                    src="https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-1/512/github-square-512.png"   \
+                    style="width: 40px; height: 40px;"   \
+                    alt="Github icon"   \
+                  >  \
+                </a> \
+                <a href="https://james-haruki.vercel.app" style="text-decoration: none; color: #0073e6;"> \
+                  <img   \
+                      src="https://cdn2.iconfinder.com/data/icons/banking-finance-glyphs-vol-6/52/person__account__avatar__user__profile__global__portfolio-512.png"   \
+                      style="width: 40px; height: 40px;"   \
+                      alt="Protfolio icon"   \
+                  >  \
+                </a> \
             </div> \
           </td> \
         </tr> \
@@ -229,11 +238,11 @@ export const getRandomTemplate = (username, heading) => {
               gap: 20px; \
             " \
           > \
-            <img \
-              src="https://cdn1.iconfinder.com/data/icons/business-and-profession/128/19-512.png" \
-              style="width: 70px; height: 70px" \
-              alt="Collaboration icon" \
-            /> \
+            <img   \
+            src="https://cdn1.iconfinder.com/data/icons/business-and-profession/128/19-512.png"   \
+            style="width: 70px; height: 70px;"   \
+            alt="Coverletter icon"   \
+            >  \
             <h1 style="color: #2c2c2c; margin-left: 20px"> \
               ${heading} \
             </h1> \
@@ -282,15 +291,27 @@ export const getRandomTemplate = (username, heading) => {
               If this proposal aligns with your interests, I would be eager to discuss the details further. Below are links to my <b>portfolio</b> and <b>social media profiles</b> for your review: \
             </p> \
             <div style="display: flex"> \
-              <a href="https://twitter.com/JamesTX0108" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
-                <img src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-contained-512.png" style="width: 40px; height: 40px" alt="Twitter icon" /> \
-              </a> \
-              <a href="https://github.com/montedev0516" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
-                <img src="https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-1/512/github-square-512.png" style="width: 40px; height: 40px" alt="GitHub icon" /> \
-              </a> \
-              <a href="https://james-haruki.vercel.app" style="text-decoration: none; color: #0073e6;"> \
-                <img src="https://cdn2.iconfinder.com/data/icons/banking-finance-glyphs-vol-6/52/person__account__avatar__user__profile__global__portfolio-512.png" style="width: 40px; height: 40px" alt="Portfolio icon" /> \
-              </a> \
+                <a href="https://twitter.com/JamesTX0108" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
+                  <img   \
+                    src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-contained-512.png"   \
+                    style="width: 40px; height: 40px;"   \
+                    alt="X icon"   \
+                    >  \
+                </a> \
+                <a href="https://github.com/montedev0516" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
+                  <img   \
+                    src="https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-1/512/github-square-512.png"   \
+                    style="width: 40px; height: 40px;"   \
+                    alt="Github icon"   \
+                  >  \
+                </a> \
+                <a href="https://james-haruki.vercel.app" style="text-decoration: none; color: #0073e6;"> \
+                  <img   \
+                      src="https://cdn2.iconfinder.com/data/icons/banking-finance-glyphs-vol-6/52/person__account__avatar__user__profile__global__portfolio-512.png"   \
+                      style="width: 40px; height: 40px;"   \
+                      alt="Protfolio icon"   \
+                  >  \
+                </a> \
             </div> \
           </td> \
         </tr> \
@@ -332,11 +353,11 @@ export const getRandomTemplate = (username, heading) => {
               gap: 20px; \
             " \
           > \
-            <img \
-              src="https://cdn1.iconfinder.com/data/icons/business-and-profession/128/19-512.png" \
-              style="width: 70px; height: 70px" \
-              alt="Collaboration icon" \
-            /> \
+            <img   \
+            src="https://cdn1.iconfinder.com/data/icons/business-and-profession/128/19-512.png"   \
+            style="width: 70px; height: 70px;"   \
+            alt="Coverletter icon"   \
+            >  \
             <h1 style="color: #2c2c2c; margin-left: 20px"> \
               ${heading} \
             </h1> \
@@ -385,15 +406,27 @@ export const getRandomTemplate = (username, heading) => {
               If this proposal resonates with you, I would be eager to discuss the specifics further. Below are links to my <b>portfolio</b> and <b>social media profiles</b> for your review: \
             </p> \
             <div style="display: flex"> \
-              <a href="https://twitter.com/JamesTX0108" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
-                <img src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-contained-512.png" style="width: 40px; height: 40px" alt="Twitter icon" /> \
-              </a> \
-              <a href="https://github.com/montedev0516" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
-                <img src="https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-1/512/github-square-512.png" style="width: 40px; height: 40px" alt="GitHub icon" /> \
-              </a> \
-              <a href="https://james-haruki.vercel.app" style="text-decoration: none; color: #0073e6;"> \
-                <img src="https://cdn2.iconfinder.com/data/icons/banking-finance-glyphs-vol-6/52/person__account__avatar__user__profile__global__portfolio-512.png" style="width: 40px; height: 40px" alt="Portfolio icon" /> \
-              </a> \
+                <a href="https://twitter.com/JamesTX0108" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
+                  <img   \
+                    src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-contained-512.png"   \
+                    style="width: 40px; height: 40px;"   \
+                    alt="X icon"   \
+                    >  \
+                </a> \
+                <a href="https://github.com/montedev0516" style="text-decoration: none; color: #0073e6; padding-right: 20px;"> \
+                  <img   \
+                    src="https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-1/512/github-square-512.png"   \
+                    style="width: 40px; height: 40px;"   \
+                    alt="Github icon"   \
+                  >  \
+                </a> \
+                <a href="https://james-haruki.vercel.app" style="text-decoration: none; color: #0073e6;"> \
+                  <img   \
+                      src="https://cdn2.iconfinder.com/data/icons/banking-finance-glyphs-vol-6/52/person__account__avatar__user__profile__global__portfolio-512.png"   \
+                      style="width: 40px; height: 40px;"   \
+                      alt="Protfolio icon"   \
+                  >  \
+                </a> \
             </div> \
           </td> \
         </tr> \
