@@ -22,7 +22,7 @@ const sendEmail = async (userEmail, username) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: userEmail,
-    subject: `█▓▒▒░░░🤝Looking for a Long-Term Collaboration🤝░░░▒▒▓█`,
+    subject: `✩░▒▓▆▅▃▂▁🤝𝐋𝐨𝐨𝐤𝐢𝐧𝐠 𝐟𝐨𝐫 𝐚 𝐋𝐨𝐧𝐠-𝐓𝐞𝐫𝐦 𝐂𝐨𝐥𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐢𝐨𝐧🤝▁▂▃▅▆▓▒░✩`,
     html: htmlContent,
   };
 
