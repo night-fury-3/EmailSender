@@ -57,7 +57,7 @@ const sendEmailsToAllUsers = async () => {
       log: log, // You can adjust what log information to store
     });
 
-    await sleep(1000); // Delay of 1000 milliseconds (1 second) between each email
+    await sleep(5000); // Delay of 1000 milliseconds (1 second) between each email
   }
 
   // Convert logs array to worksheet
