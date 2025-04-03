@@ -27,7 +27,7 @@ const formatDateTime = () => {
 
 let prevUserName = "";
 let sender = "";
-let curIndex = -1;
+let curIndex = 0;
 
 const sendEmailsToAllUsers = async () => {
   const logs = []; // Array to hold log information
