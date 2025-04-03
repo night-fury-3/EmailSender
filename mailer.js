@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import { writeFile, utils } from "xlsx";
 import users from "./users.js";
-import { getEmailSender } from "./core/selection/email.js";
+import { getEmailSenderbyOrder } from "./core/selection/email.js";
 import { getRandomHeading } from "./core/selection/heading.js";
 import { getRandomTemplate } from "./core/selection/template.js";
 import { sendEmailContent } from "./core/emailDeliver.js";
@@ -27,6 +27,7 @@ const formatDateTime = () => {
 
 let prevUserName = "";
 let sender = "";
+let curIndex = -1;
 
 const sendEmailsToAllUsers = async () => {
   const logs = []; // Array to hold log information
@@ -34,8 +35,9 @@ const sendEmailsToAllUsers = async () => {
   for (const user of userList) {
     // Checking username and choose random sender email if username changes
     if (sender === "" || user?.name !== prevUserName) {
-      sender = getEmailSender();
+      sender = getEmailSenderbyOrder(curIndex);
       prevUserName = user?.name;
+      curIndex = curIndex + 1;
     }
 
     // Select random heading and template content
